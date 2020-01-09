@@ -1,0 +1,2 @@
+include ':app', ':spatial_libs'
+rootProject.name='Mach1SpatialAPI'
