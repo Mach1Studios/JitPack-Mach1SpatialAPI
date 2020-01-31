@@ -6,7 +6,7 @@
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
 
-package com.Mach1.spatial_libs;
+package com.mach1.Mach1SpatialLibs;
 
 public final class Mach1DecodeAlgoType {
   public final static Mach1DecodeAlgoType Mach1DecodeAlgoSpatial = new Mach1DecodeAlgoType("Mach1DecodeAlgoSpatial", Mach1DecodeModuleJNI.Mach1DecodeAlgoSpatial_get());

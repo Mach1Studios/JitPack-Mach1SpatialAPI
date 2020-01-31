@@ -1,14 +1,13 @@
-package com.Mach1.example;
+package com.mach1.example;
 
-import com.Mach1.spatial_libs.*;
-import com.Mach1.spatial_libs.Mach1DecodeAlgoType;
+import com.mach1.Mach1SpatialLibs.*;
 
-import com.Mach1.example.custom_views.AngleView;
-import com.Mach1.example.custom_views.SoundList;
-import com.Mach1.example.custom_views.SoundMap;
-import com.Mach1.example.custom_views.YawView;
-import com.Mach1.example.custom_views.FixedFocusScrollView;
-import com.Mach1.example.custom_views.OnSoundListSelectedItemChangedListener;
+import com.mach1.example.custom_views.AngleView;
+import com.mach1.example.custom_views.SoundList;
+import com.mach1.example.custom_views.SoundMap;
+import com.mach1.example.custom_views.YawView;
+import com.mach1.example.custom_views.FixedFocusScrollView;
+import com.mach1.example.custom_views.OnSoundListSelectedItemChangedListener;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;

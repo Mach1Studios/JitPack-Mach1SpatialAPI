@@ -1,4 +1,4 @@
-package com.Mach1.example.custom_views;
+package com.mach1.example.custom_views;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -18,10 +18,8 @@ import android.view.animation.Animation;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.Mach1.spatial_libs.Mach1DecodeAlgoType;
-
-import com.Mach1.example.MainActivity;
-import com.Mach1.example.R;
+import com.mach1.example.MainActivity;
+import com.mach1.example.R;
 
 public class SoundMap extends View implements AngleView {
 
@@ -85,7 +83,7 @@ public class SoundMap extends View implements AngleView {
     float centerX;
     float centerY;
 
-    public void update(float[] decoded, com.Mach1.spatial_libs.Mach1DecodeAlgoType decodeType) {
+    public void update(float[] decoded, com.mach1.Mach1SpatialLibs.Mach1DecodeAlgoType decodeType) {
         for (Encoder encoder : listEncoders) {
             encoder.update(decoded, decodeType);
         }

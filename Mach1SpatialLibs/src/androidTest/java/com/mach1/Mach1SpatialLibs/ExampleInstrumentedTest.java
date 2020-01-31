@@ -1,4 +1,4 @@
-package com.Mach1.spatial_libs;
+package com.mach1.Mach1SpatialLibs;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

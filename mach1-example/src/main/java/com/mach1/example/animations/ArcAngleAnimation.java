@@ -1,5 +1,5 @@
-package com.Mach1.example.animations;
-import com.Mach1.example.custom_views.AngleView;
+package com.mach1.example.animations;
+import com.mach1.example.custom_views.AngleView;
 
 import android.view.animation.Animation;
 import android.view.animation.Transformation;

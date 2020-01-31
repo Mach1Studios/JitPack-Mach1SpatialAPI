@@ -1,4 +1,4 @@
-package com.Mach1.example.custom_views;
+package com.mach1.example.custom_views;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.Mach1.example.R;
+import com.mach1.example.R;
 
 public class SoundList extends LinearLayout implements View.OnClickListener {
 

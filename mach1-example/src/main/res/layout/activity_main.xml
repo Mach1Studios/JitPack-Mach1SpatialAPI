@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.Mach1.example.custom_views.FixedFocusScrollView
+    <com.mach1.example.custom_views.FixedFocusScrollView
         android:id="@+id/sv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -52,7 +52,7 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
-                    <com.Mach1.example.custom_views.YawView
+                    <com.mach1.example.custom_views.YawView
                         android:id="@+id/round_chart_view"
                         android:layout_width="80dp"
                         android:layout_height="80dp" />
@@ -107,7 +107,7 @@
                         android:layout_gravity="center_vertical"
                         android:text="Pitch" />
 
-                    <com.Mach1.example.custom_views.VerticalSeekBar
+                    <com.mach1.example.custom_views.VerticalSeekBar
                         android:id="@+id/sbPitch"
                         style="@style/MySeekBar"
                         android:layout_width="wrap_content"
@@ -138,7 +138,7 @@
                     android:layout_width="200dp"
                     android:layout_height="200dp">
 
-                    <com.Mach1.example.custom_views.SoundMap
+                    <com.mach1.example.custom_views.SoundMap
                         android:id="@+id/main_chart_view"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -170,11 +170,11 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <com.Mach1.example.custom_views.SoundList
+                <com.mach1.example.custom_views.SoundList
                     android:id="@+id/sound_list"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
-                </com.Mach1.example.custom_views.SoundList>
+                </com.mach1.example.custom_views.SoundList>
             </LinearLayout>
 
             <LinearLayout
@@ -226,5 +226,5 @@
             </LinearLayout>
 
         </LinearLayout>
-    </com.Mach1.example.custom_views.FixedFocusScrollView>
+    </com.mach1.example.custom_views.FixedFocusScrollView>
 </LinearLayout>

@@ -6,7 +6,7 @@
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
 
-package com.Mach1.spatial_libs;
+package com.mach1.Mach1SpatialLibs;
 
 public final class Mach1EncodeInputModeType {
   public final static Mach1EncodeInputModeType Mach1EncodeInputModeMono = new Mach1EncodeInputModeType("Mach1EncodeInputModeMono", Mach1EncodeModuleJNI.Mach1EncodeInputModeMono_get());

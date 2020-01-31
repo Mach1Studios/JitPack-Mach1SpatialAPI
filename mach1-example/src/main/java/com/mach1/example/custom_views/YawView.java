@@ -1,4 +1,4 @@
-package com.Mach1.example.custom_views;
+package com.mach1.example.custom_views;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -13,7 +13,7 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.animation.Animation;
 
-import com.Mach1.example.R;
+import com.mach1.example.R;
 
 public class YawView extends View implements AngleView {
 

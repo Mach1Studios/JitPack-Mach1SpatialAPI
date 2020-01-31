@@ -1,4 +1,4 @@
-package com.Mach1.example.custom_views;
+package com.mach1.example.custom_views;
 
 import android.content.Context;
 import android.util.AttributeSet;

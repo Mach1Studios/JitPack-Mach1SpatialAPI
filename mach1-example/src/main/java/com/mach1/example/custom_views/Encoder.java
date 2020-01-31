@@ -1,4 +1,4 @@
-package com.Mach1.example.custom_views;
+package com.mach1.example.custom_views;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -6,14 +6,13 @@ import android.graphics.Paint;
 import android.support.v4.content.ContextCompat;
 import android.media.MediaPlayer;
 import android.net.Uri;
-import android.util.Log;
 
-import com.Mach1.spatial_libs.Mach1Encode;
-import com.Mach1.spatial_libs.Mach1EncodeInputModeType;
-import com.Mach1.spatial_libs.Mach1DecodeAlgoType;
-import com.Mach1.spatial_libs.Mach1Point3DArray;
-import com.Mach1.example.MainActivity;
-import com.Mach1.example.R;
+import com.mach1.Mach1SpatialLibs.Mach1Encode;
+import com.mach1.Mach1SpatialLibs.Mach1EncodeInputModeType;
+import com.mach1.Mach1SpatialLibs.Mach1DecodeAlgoType;
+import com.mach1.Mach1SpatialLibs.Mach1Point3DArray;
+import com.mach1.example.MainActivity;
+import com.mach1.example.R;
 
 public class Encoder {
 

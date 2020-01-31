@@ -6,7 +6,7 @@
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
 
-package com.Mach1.spatial_libs;
+package com.mach1.Mach1SpatialLibs;
 
 public final class Mach1EncodeOutputModeType {
   public final static Mach1EncodeOutputModeType Mach1EncodeOutputMode4Ch = new Mach1EncodeOutputModeType("Mach1EncodeOutputMode4Ch", Mach1EncodeModuleJNI.Mach1EncodeOutputMode4Ch_get());

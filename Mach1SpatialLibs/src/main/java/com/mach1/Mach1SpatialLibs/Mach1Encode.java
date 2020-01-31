@@ -6,7 +6,7 @@
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
 
-package com.Mach1.spatial_libs;
+package com.mach1.Mach1SpatialLibs;
 
 public class Mach1Encode {
 

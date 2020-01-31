@@ -6,7 +6,7 @@
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
 
-package com.Mach1.spatial_libs;
+package com.mach1.Mach1SpatialLibs;
 
 public final class Mach1PlatformType {
   public final static Mach1PlatformType Mach1PlatformDefault = new Mach1PlatformType("Mach1PlatformDefault", Mach1DecodeModuleJNI.Mach1PlatformDefault_get());
