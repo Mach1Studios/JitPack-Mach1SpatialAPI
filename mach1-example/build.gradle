@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
     buildToolsVersion "29.0.2"
     defaultConfig {
-        applicationId "com.Mach1.example"
+        applicationId "com.mach1.example"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
@@ -20,7 +20,7 @@ android {
 }
 
 dependencies {
-    implementation project(':spatial_libs')
+    implementation project(':Mach1SpatialLibs')
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
