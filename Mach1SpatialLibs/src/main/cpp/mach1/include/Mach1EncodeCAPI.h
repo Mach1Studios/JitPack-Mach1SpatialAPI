@@ -9,8 +9,8 @@
 #include "Mach1Point4D.h"
 #include "Mach1DecodeCAPI.h"
 
-#ifdef Mach1EncodeCore_h
-    #ifndef M1_API
+#if defined(Mach1DecodeCore_h) || defined(Mach1EncodeCore_h) ||  defined(Mach1PositionalCore_h)
+#ifndef M1_API
         #if defined(_WINDOWS) || defined(WIN32)
             #define M1_API __declspec(dllexport)
         #else
@@ -19,7 +19,7 @@
     #endif
 #else
     #ifndef M1_API
-        #if defined(_WINDOWS) || defined(WIN32)
+		#if !defined(M1_STATIC) && (defined(_WINDOWS) || defined(WIN32))
             #define M1_API __declspec(dllimport)
         #else
             #define M1_API
@@ -31,11 +31,27 @@
 #define Mach1EncodeCAPI_h
 
 enum Mach1EncodeInputModeType {
-	Mach1EncodeInputModeMono = 0, Mach1EncodeInputModeStereo = 1, Mach1EncodeInputModeQuad = 2, Mach1EncodeInputModeAFormat = 3, Mach1EncodeInputModeBFormat = 4
+	Mach1EncodeInputModeMono = 0, 
+	Mach1EncodeInputModeStereo, 
+	Mach1EncodeInputModeQuad, 
+	Mach1EncodeInputModeLCRS, 
+	Mach1EncodeInputModeAFormat, 
+    #if __cplusplus >  201402L
+    [[deprecated("Mach1EncodeInputModeBFormat is not specific enough, please use either: Mach1EncodeInputModeBFOAACN or Mach1EncodeInputModeBFOAFUMA", true)]]
+    #endif
+	Mach1EncodeInputModeBFormat, 
+	Mach1EncodeInputModeBFOAACN, 
+	Mach1EncodeInputModeBFOAFUMA,
+	Mach1EncodeInputModeB2OAACN, 
+	Mach1EncodeInputModeB2OAFUMA,
+	Mach1EncodeInputModeB3OAACN, 
+	Mach1EncodeInputModeB3OAFUMA,
+	Mach1EncodeInputModeLCR
 };
 
 enum Mach1EncodeOutputModeType {
-	Mach1EncodeOutputMode4Ch = 0, Mach1EncodeOutputMode8Ch = 1
+	Mach1EncodeOutputMode4Ch = 0, 
+	Mach1EncodeOutputMode8Ch
 };
 
 #ifdef __cplusplus
@@ -63,6 +79,9 @@ extern "C" {
 	M1_API void Mach1EncodeCAPI_setStereoSpread(void* M1obj, float sSpread);
 	M1_API void Mach1EncodeCAPI_setAutoOrbit(void* M1obj, bool autoOrbit);
 	M1_API void Mach1EncodeCAPI_setIsotropicEncode(void* M1obj, bool isotropicEncode);
+
+	M1_API long Mach1EncodeCAPI_getLastCalculationTime(void* M1obj);
+
 #ifdef __cplusplus
 }
 #endif
