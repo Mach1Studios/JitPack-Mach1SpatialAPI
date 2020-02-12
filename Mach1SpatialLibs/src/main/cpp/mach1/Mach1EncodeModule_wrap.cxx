@@ -237,7 +237,7 @@ static void SWIGUNUSED SWIG_JavaThrowException(JNIEnv *jenv, SWIG_JavaExceptionC
 extern "C" {
 #endif
 
-SWIGEXPORT jint JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1EncodeInputModeMono_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mach1EncodeInputModeMono_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   Mach1EncodeInputModeType result;
   
@@ -249,7 +249,7 @@ SWIGEXPORT jint JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1E
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1EncodeInputModeStereo_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mach1EncodeInputModeStereo_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   Mach1EncodeInputModeType result;
   
@@ -261,7 +261,7 @@ SWIGEXPORT jint JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1E
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1EncodeInputModeQuad_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mach1EncodeInputModeQuad_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   Mach1EncodeInputModeType result;
   
@@ -273,7 +273,7 @@ SWIGEXPORT jint JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1E
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1EncodeInputModeAFormat_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mach1EncodeInputModeAFormat_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   Mach1EncodeInputModeType result;
   
@@ -285,7 +285,7 @@ SWIGEXPORT jint JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1E
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1EncodeInputModeBFormat_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mach1EncodeInputModeBFormat_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   Mach1EncodeInputModeType result;
   
@@ -297,7 +297,7 @@ SWIGEXPORT jint JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1E
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1EncodeOutputMode4Ch_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mach1EncodeOutputMode4Ch_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   Mach1EncodeOutputModeType result;
   
@@ -309,7 +309,7 @@ SWIGEXPORT jint JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1E
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1EncodeOutputMode8Ch_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mach1EncodeOutputMode8Ch_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   Mach1EncodeOutputModeType result;
   
@@ -321,7 +321,7 @@ SWIGEXPORT jint JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1E
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1create(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1create(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   void *result = 0 ;
   
@@ -333,7 +333,7 @@ SWIGEXPORT jlong JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1delete(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1delete(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   void *arg1 = (void *) 0 ;
   
   (void)jenv;
@@ -343,7 +343,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1E
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1getPoints(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1getPoints(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   void *result = 0 ;
@@ -357,7 +357,7 @@ SWIGEXPORT jlong JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1getGains(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1getGains(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   void *result = 0 ;
@@ -371,7 +371,7 @@ SWIGEXPORT jlong JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1getPointsNames(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1getPointsNames(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   void *result = 0 ;
@@ -385,7 +385,7 @@ SWIGEXPORT jlong JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1getGainsForInputChannelNamed(JNIEnv *jenv, jclass jcls, jlong jarg1, jstring jarg2) {
+SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1getGainsForInputChannelNamed(JNIEnv *jenv, jclass jcls, jlong jarg1, jstring jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   char *arg2 = (char *) 0 ;
@@ -406,7 +406,7 @@ SWIGEXPORT jlong JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1generatePointResults(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1generatePointResults(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   void *arg1 = (void *) 0 ;
   
   (void)jenv;
@@ -416,7 +416,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1E
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1getPointsCount(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jint JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1getPointsCount(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jint jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int result;
@@ -430,7 +430,7 @@ SWIGEXPORT jint JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1E
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1getResultingVolumesDecoded(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2, jlong jarg3) {
+SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1getResultingVolumesDecoded(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2, jlong jarg3) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   enum Mach1DecodeAlgoType arg2 ;
@@ -448,7 +448,7 @@ SWIGEXPORT jlong JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1setInputMode(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1setInputMode(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
   void *arg1 = (void *) 0 ;
   enum Mach1EncodeInputModeType arg2 ;
   
@@ -460,7 +460,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1E
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1setOutputMode(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1setOutputMode(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
   void *arg1 = (void *) 0 ;
   enum Mach1EncodeOutputModeType arg2 ;
   
@@ -472,7 +472,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1E
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1setRotation(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1setRotation(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2) {
   void *arg1 = (void *) 0 ;
   float arg2 ;
   
@@ -484,7 +484,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1E
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1setDiverge(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1setDiverge(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2) {
   void *arg1 = (void *) 0 ;
   float arg2 ;
   
@@ -496,7 +496,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1E
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1setPitch(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1setPitch(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2) {
   void *arg1 = (void *) 0 ;
   float arg2 ;
   
@@ -508,7 +508,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1E
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1setStereoRotate(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1setStereoRotate(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2) {
   void *arg1 = (void *) 0 ;
   float arg2 ;
   
@@ -520,7 +520,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1E
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1setStereoSpread(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1setStereoSpread(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2) {
   void *arg1 = (void *) 0 ;
   float arg2 ;
   
@@ -532,7 +532,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1E
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1setAutoOrbit(JNIEnv *jenv, jclass jcls, jlong jarg1, jboolean jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1setAutoOrbit(JNIEnv *jenv, jclass jcls, jlong jarg1, jboolean jarg2) {
   void *arg1 = (void *) 0 ;
   bool arg2 ;
   
@@ -544,7 +544,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1E
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1setIsotropicEncode(JNIEnv *jenv, jclass jcls, jlong jarg1, jboolean jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mach1EncodeCAPI_1setIsotropicEncode(JNIEnv *jenv, jclass jcls, jlong jarg1, jboolean jarg2) {
   void *arg1 = (void *) 0 ;
   bool arg2 ;
   

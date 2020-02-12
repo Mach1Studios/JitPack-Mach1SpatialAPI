@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.Mach1.spatial_libs.test", appContext.getPackageName());
+        assertEquals("com.Mach1.Mach1SpatialLibs.test", appContext.getPackageName());
     }
 }

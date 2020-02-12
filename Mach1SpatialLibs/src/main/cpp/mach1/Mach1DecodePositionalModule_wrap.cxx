@@ -237,7 +237,7 @@ static void SWIGUNUSED SWIG_JavaThrowException(JNIEnv *jenv, SWIG_JavaExceptionC
 extern "C" {
 #endif
 
-SWIGEXPORT jlong JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1create(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1create(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   void *result = 0 ;
   
@@ -249,7 +249,7 @@ SWIGEXPORT jlong JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModul
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1delete(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1delete(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   void *arg1 = (void *) 0 ;
   
   (void)jenv;
@@ -259,7 +259,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setPlatformType(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setPlatformType(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
   void *arg1 = (void *) 0 ;
   enum Mach1PlatformType arg2 ;
   
@@ -271,7 +271,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setDecodeAlgoType(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setDecodeAlgoType(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
   void *arg1 = (void *) 0 ;
   enum Mach1DecodeAlgoType arg2 ;
   
@@ -283,7 +283,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setMuteWhenOutsideObject(JNIEnv *jenv, jclass jcls, jlong jarg1, jboolean jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setMuteWhenOutsideObject(JNIEnv *jenv, jclass jcls, jlong jarg1, jboolean jarg2) {
   void *arg1 = (void *) 0 ;
   bool arg2 ;
   
@@ -295,7 +295,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setMuteWhenInsideObject(JNIEnv *jenv, jclass jcls, jlong jarg1, jboolean jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setMuteWhenInsideObject(JNIEnv *jenv, jclass jcls, jlong jarg1, jboolean jarg2) {
   void *arg1 = (void *) 0 ;
   bool arg2 ;
   
@@ -307,7 +307,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setUseAttenuation(JNIEnv *jenv, jclass jcls, jlong jarg1, jboolean jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setUseAttenuation(JNIEnv *jenv, jclass jcls, jlong jarg1, jboolean jarg2) {
   void *arg1 = (void *) 0 ;
   bool arg2 ;
   
@@ -319,7 +319,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setAttenuationCurve(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setAttenuationCurve(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2) {
   void *arg1 = (void *) 0 ;
   float arg2 ;
   
@@ -331,7 +331,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setUsePlaneCalculation(JNIEnv *jenv, jclass jcls, jlong jarg1, jboolean jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setUsePlaneCalculation(JNIEnv *jenv, jclass jcls, jlong jarg1, jboolean jarg2) {
   void *arg1 = (void *) 0 ;
   bool arg2 ;
   
@@ -343,7 +343,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setUseYawForRotation(JNIEnv *jenv, jclass jcls, jlong jarg1, jboolean jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setUseYawForRotation(JNIEnv *jenv, jclass jcls, jlong jarg1, jboolean jarg2) {
   void *arg1 = (void *) 0 ;
   bool arg2 ;
   
@@ -355,7 +355,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setUsePitchForRotation(JNIEnv *jenv, jclass jcls, jlong jarg1, jboolean jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setUsePitchForRotation(JNIEnv *jenv, jclass jcls, jlong jarg1, jboolean jarg2) {
   void *arg1 = (void *) 0 ;
   bool arg2 ;
   
@@ -367,7 +367,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setUseRollForRotation(JNIEnv *jenv, jclass jcls, jlong jarg1, jboolean jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setUseRollForRotation(JNIEnv *jenv, jclass jcls, jlong jarg1, jboolean jarg2) {
   void *arg1 = (void *) 0 ;
   bool arg2 ;
   
@@ -379,7 +379,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setListenerPosition(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setListenerPosition(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jobject jarg2_) {
   void *arg1 = (void *) 0 ;
   Mach1Point3D arg2 ;
   Mach1Point3D *argp2 ;
@@ -398,7 +398,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setListenerRotation(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setListenerRotation(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jobject jarg2_) {
   void *arg1 = (void *) 0 ;
   Mach1Point3D arg2 ;
   Mach1Point3D *argp2 ;
@@ -417,7 +417,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setListenerRotationQuat(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setListenerRotationQuat(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jobject jarg2_) {
   void *arg1 = (void *) 0 ;
   Mach1Point4D arg2 ;
   Mach1Point4D *argp2 ;
@@ -436,7 +436,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setDecoderAlgoPosition(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setDecoderAlgoPosition(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jobject jarg2_) {
   void *arg1 = (void *) 0 ;
   Mach1Point3D arg2 ;
   Mach1Point3D *argp2 ;
@@ -455,7 +455,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setDecoderAlgoRotation(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setDecoderAlgoRotation(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jobject jarg2_) {
   void *arg1 = (void *) 0 ;
   Mach1Point3D arg2 ;
   Mach1Point3D *argp2 ;
@@ -474,7 +474,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setDecoderAlgoRotationQuat(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setDecoderAlgoRotationQuat(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jobject jarg2_) {
   void *arg1 = (void *) 0 ;
   Mach1Point4D arg2 ;
   Mach1Point4D *argp2 ;
@@ -493,7 +493,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setDecoderAlgoScale(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setDecoderAlgoScale(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jobject jarg2_) {
   void *arg1 = (void *) 0 ;
   Mach1Point3D arg2 ;
   Mach1Point3D *argp2 ;
@@ -512,7 +512,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1evaluatePositionResults(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1evaluatePositionResults(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   void *arg1 = (void *) 0 ;
   
   (void)jenv;
@@ -522,7 +522,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1getCoefficients(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1getCoefficients(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   void *arg1 = (void *) 0 ;
   float *arg2 = (float *) 0 ;
   
@@ -534,7 +534,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT jfloat JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1getDist(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jfloat JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1getDist(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jfloat jresult = 0 ;
   void *arg1 = (void *) 0 ;
   float result;
@@ -548,7 +548,7 @@ SWIGEXPORT jfloat JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModu
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1getCurrentAngle(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1getCurrentAngle(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   Mach1Point3D result;
@@ -562,7 +562,7 @@ SWIGEXPORT jlong JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModul
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1getCoefficientsRotation(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1getCoefficientsRotation(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   Mach1Point3D result;
@@ -576,7 +576,7 @@ SWIGEXPORT jlong JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModul
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setFilterSpeed(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setFilterSpeed(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2) {
   void *arg1 = (void *) 0 ;
   float arg2 ;
   
@@ -588,7 +588,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setUseFalloff(JNIEnv *jenv, jclass jcls, jlong jarg1, jboolean jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setUseFalloff(JNIEnv *jenv, jclass jcls, jlong jarg1, jboolean jarg2) {
   void *arg1 = (void *) 0 ;
   bool arg2 ;
   
@@ -600,7 +600,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setFalloffCurve(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setFalloffCurve(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2) {
   void *arg1 = (void *) 0 ;
   float arg2 ;
   
@@ -612,7 +612,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setUseClosestPointRotationMuteInside(JNIEnv *jenv, jclass jcls, jlong jarg1, jboolean jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setUseClosestPointRotationMuteInside(JNIEnv *jenv, jclass jcls, jlong jarg1, jboolean jarg2) {
   void *arg1 = (void *) 0 ;
   bool arg2 ;
   
@@ -624,7 +624,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setCameraPosition(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setCameraPosition(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jobject jarg2_) {
   void *arg1 = (void *) 0 ;
   Mach1Point3D arg2 ;
   Mach1Point3D *argp2 ;
@@ -643,7 +643,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setCameraRotation(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setCameraRotation(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jobject jarg2_) {
   void *arg1 = (void *) 0 ;
   Mach1Point3D arg2 ;
   Mach1Point3D *argp2 ;
@@ -662,7 +662,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setCameraRotationQuat(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setCameraRotationQuat(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jobject jarg2_) {
   void *arg1 = (void *) 0 ;
   Mach1Point4D arg2 ;
   Mach1Point4D *argp2 ;
@@ -681,7 +681,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1getVolumesWalls(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1getVolumesWalls(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   void *arg1 = (void *) 0 ;
   float *arg2 = (float *) 0 ;
   
@@ -693,7 +693,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1getVolumeRotation(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1getVolumeRotation(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   Mach1Point3D result;
@@ -707,7 +707,7 @@ SWIGEXPORT jlong JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModul
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setUseBlendMode(JNIEnv *jenv, jclass jcls, jlong jarg1, jboolean jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setUseBlendMode(JNIEnv *jenv, jclass jcls, jlong jarg1, jboolean jarg2) {
   void *arg1 = (void *) 0 ;
   bool arg2 ;
   
@@ -719,7 +719,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setIgnoreTopBottom(JNIEnv *jenv, jclass jcls, jlong jarg1, jboolean jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setIgnoreTopBottom(JNIEnv *jenv, jclass jcls, jlong jarg1, jboolean jarg2) {
   void *arg1 = (void *) 0 ;
   bool arg2 ;
   
@@ -731,7 +731,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setFalloffCurveBlendMode(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setFalloffCurveBlendMode(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2) {
   void *arg1 = (void *) 0 ;
   float arg2 ;
   
@@ -743,7 +743,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setAttenuationCurveBlendMode(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1setAttenuationCurveBlendMode(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2) {
   void *arg1 = (void *) 0 ;
   float arg2 ;
   
@@ -755,7 +755,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1getVolumesRoom(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1getVolumesRoom(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   void *arg1 = (void *) 0 ;
   float *arg2 = (float *) 0 ;
   
@@ -767,7 +767,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModule
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1getCoefficientsInterior(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodePositionalModuleJNI_Mach1DecodePositionalCAPI_1getCoefficientsInterior(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   void *arg1 = (void *) 0 ;
   float *arg2 = (float *) 0 ;
   

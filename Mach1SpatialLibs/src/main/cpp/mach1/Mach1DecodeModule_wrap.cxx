@@ -237,7 +237,7 @@ static void SWIGUNUSED SWIG_JavaThrowException(JNIEnv *jenv, SWIG_JavaExceptionC
 extern "C" {
 #endif
 
-SWIGEXPORT jint JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodeModuleJNI_Mach1PlatformDefault_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodeModuleJNI_Mach1PlatformDefault_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   Mach1PlatformType result;
   
@@ -249,7 +249,7 @@ SWIGEXPORT jint JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodeModuleJNI_Mach1P
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodeModuleJNI_Mach1DecodeAlgoSpatial_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodeModuleJNI_Mach1DecodeAlgoSpatial_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   Mach1DecodeAlgoType result;
   
@@ -261,7 +261,7 @@ SWIGEXPORT jint JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodeModuleJNI_Mach1D
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodeModuleJNI_Mach1DecodeCAPI_1create(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodeModuleJNI_Mach1DecodeCAPI_1create(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   void *result = 0 ;
   
@@ -273,7 +273,7 @@ SWIGEXPORT jlong JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodeModuleJNI_Mach1
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodeModuleJNI_Mach1DecodeCAPI_1delete(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodeModuleJNI_Mach1DecodeCAPI_1delete(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   void *arg1 = (void *) 0 ;
   
   (void)jenv;
@@ -283,7 +283,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodeModuleJNI_Mach1D
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodeModuleJNI_Mach1DecodeCAPI_1setDecodeAlgoType(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodeModuleJNI_Mach1DecodeCAPI_1setDecodeAlgoType(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
   void *arg1 = (void *) 0 ;
   enum Mach1DecodeAlgoType arg2 ;
   
@@ -295,7 +295,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodeModuleJNI_Mach1D
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodeModuleJNI_Mach1DecodeCAPI_1setPlatformType(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodeModuleJNI_Mach1DecodeCAPI_1setPlatformType(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
   void *arg1 = (void *) 0 ;
   enum Mach1PlatformType arg2 ;
   
@@ -307,7 +307,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodeModuleJNI_Mach1D
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodeModuleJNI_Mach1DecodeCAPI_1decode(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2, jfloat jarg3, jfloat jarg4, jlong jarg5, jint jarg6, jint jarg7) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodeModuleJNI_Mach1DecodeCAPI_1decode(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2, jfloat jarg3, jfloat jarg4, jlong jarg5, jint jarg6, jint jarg7) {
   void *arg1 = (void *) 0 ;
   float arg2 ;
   float arg3 ;
@@ -329,7 +329,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodeModuleJNI_Mach1D
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodeModuleJNI_Mach1DecodeCAPI_1setFilterSpeed(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodeModuleJNI_Mach1DecodeCAPI_1setFilterSpeed(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2) {
   void *arg1 = (void *) 0 ;
   float arg2 ;
   
@@ -341,7 +341,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodeModuleJNI_Mach1D
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodeModuleJNI_Mach1DecodeCAPI_1beginBuffer(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodeModuleJNI_Mach1DecodeCAPI_1beginBuffer(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   void *arg1 = (void *) 0 ;
   
   (void)jenv;
@@ -351,7 +351,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodeModuleJNI_Mach1D
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodeModuleJNI_Mach1DecodeCAPI_1endBuffer(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodeModuleJNI_Mach1DecodeCAPI_1endBuffer(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   void *arg1 = (void *) 0 ;
   
   (void)jenv;
@@ -361,7 +361,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodeModuleJNI_Mach1D
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodeModuleJNI_Mach1DecodeCAPI_1getCurrentTime(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jint JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodeModuleJNI_Mach1DecodeCAPI_1getCurrentTime(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jint jresult = 0 ;
   void *arg1 = (void *) 0 ;
   long result;
@@ -375,7 +375,7 @@ SWIGEXPORT jint JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodeModuleJNI_Mach1D
 }
 
 
-SWIGEXPORT jstring JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodeModuleJNI_Mach1DecodeCAPI_1getLog(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jstring JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodeModuleJNI_Mach1DecodeCAPI_1getLog(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jstring jresult = 0 ;
   void *arg1 = (void *) 0 ;
   char *result = 0 ;
@@ -389,7 +389,7 @@ SWIGEXPORT jstring JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodeModuleJNI_Mac
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_Mach1_spatial_1libs_Mach1DecodeModuleJNI_Mach1DecodeCAPI_1getCurrentAngle(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1DecodeModuleJNI_Mach1DecodeCAPI_1getCurrentAngle(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   Mach1Point3D result;
