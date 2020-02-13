@@ -255,7 +255,7 @@ SWIGINTERN Mach1FloatArray *Mach1FloatArray_frompointer(float *t){
 extern "C" {
 #endif
 
-SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1FloatArrayModuleJNI_new_1Mach1FloatArray(JNIEnv *jenv, jclass jcls, jint jarg1) {
+SWIGEXPORT jlong JNICALL Java_com_mach1_Mach1SpatialLibs_Mach1FloatArrayModuleJNI_new_1Mach1FloatArray(JNIEnv *jenv, jclass jcls, jint jarg1) {
   jlong jresult = 0 ;
   int arg1 ;
   Mach1FloatArray *result = 0 ;
@@ -269,7 +269,7 @@ SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1FloatArrayModuleJN
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1FloatArrayModuleJNI_delete_1Mach1FloatArray(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_com_mach1_Mach1SpatialLibs_Mach1FloatArrayModuleJNI_delete_1Mach1FloatArray(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   Mach1FloatArray *arg1 = (Mach1FloatArray *) 0 ;
   
   (void)jenv;
@@ -279,7 +279,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1FloatArrayModuleJNI
 }
 
 
-SWIGEXPORT jfloat JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1FloatArrayModuleJNI_Mach1FloatArray_1getitem(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT jfloat JNICALL Java_com_mach1_Mach1SpatialLibs_Mach1FloatArrayModuleJNI_Mach1FloatArray_1getitem(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   jfloat jresult = 0 ;
   Mach1FloatArray *arg1 = (Mach1FloatArray *) 0 ;
   int arg2 ;
@@ -296,7 +296,7 @@ SWIGEXPORT jfloat JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1FloatArrayModuleJ
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1FloatArrayModuleJNI_Mach1FloatArray_1setitem(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jfloat jarg3) {
+SWIGEXPORT void JNICALL Java_com_mach1_Mach1SpatialLibs_Mach1FloatArrayModuleJNI_Mach1FloatArray_1setitem(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jfloat jarg3) {
   Mach1FloatArray *arg1 = (Mach1FloatArray *) 0 ;
   int arg2 ;
   float arg3 ;
@@ -311,7 +311,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1FloatArrayModuleJNI
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1FloatArrayModuleJNI_Mach1FloatArray_1cast(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_com_mach1_Mach1SpatialLibs_Mach1FloatArrayModuleJNI_Mach1FloatArray_1cast(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   Mach1FloatArray *arg1 = (Mach1FloatArray *) 0 ;
   float *result = 0 ;
@@ -326,7 +326,7 @@ SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1FloatArrayModuleJN
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1FloatArrayModuleJNI_Mach1FloatArray_1frompointer(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jlong JNICALL Java_com_mach1_Mach1SpatialLibs_Mach1FloatArrayModuleJNI_Mach1FloatArray_1frompointer(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jlong jresult = 0 ;
   float *arg1 = (float *) 0 ;
   Mach1FloatArray *result = 0 ;

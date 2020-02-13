@@ -245,7 +245,7 @@ void* getitemVoid(void* in, int index)
 extern "C" {
 #endif
 
-SWIGEXPORT jstring JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1UtilsModuleJNI_convertToString(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jstring JNICALL Java_com_mach1_Mach1SpatialLibs_Mach1UtilsModuleJNI_convertToString(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jstring jresult = 0 ;
   void *arg1 = (void *) 0 ;
   char *result = 0 ;
@@ -259,7 +259,7 @@ SWIGEXPORT jstring JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1UtilsModuleJNI_c
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1UtilsModuleJNI_getitemVoid(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_com_mach1_Mach1SpatialLibs_Mach1UtilsModuleJNI_getitemVoid(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int arg2 ;

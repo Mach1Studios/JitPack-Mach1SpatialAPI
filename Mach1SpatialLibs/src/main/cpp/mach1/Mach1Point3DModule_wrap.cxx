@@ -258,7 +258,7 @@ SWIGINTERN Mach1Point3DArray *Mach1Point3DArray_frompointer(Mach1Point3D *t){
 extern "C" {
 #endif
 
-SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_Mach1Point3D_1x_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jfloat jarg2) {
+SWIGEXPORT void JNICALL Java_com_mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_Mach1Point3D_1x_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jfloat jarg2) {
   Mach1Point3D *arg1 = (Mach1Point3D *) 0 ;
   float arg2 ;
   
@@ -271,7 +271,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_Ma
 }
 
 
-SWIGEXPORT jfloat JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_Mach1Point3D_1x_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jfloat JNICALL Java_com_mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_Mach1Point3D_1x_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jfloat jresult = 0 ;
   Mach1Point3D *arg1 = (Mach1Point3D *) 0 ;
   float result;
@@ -286,7 +286,7 @@ SWIGEXPORT jfloat JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_Mach1Point3D_1y_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jfloat jarg2) {
+SWIGEXPORT void JNICALL Java_com_mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_Mach1Point3D_1y_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jfloat jarg2) {
   Mach1Point3D *arg1 = (Mach1Point3D *) 0 ;
   float arg2 ;
   
@@ -299,7 +299,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_Ma
 }
 
 
-SWIGEXPORT jfloat JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_Mach1Point3D_1y_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jfloat JNICALL Java_com_mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_Mach1Point3D_1y_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jfloat jresult = 0 ;
   Mach1Point3D *arg1 = (Mach1Point3D *) 0 ;
   float result;
@@ -314,7 +314,7 @@ SWIGEXPORT jfloat JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_Mach1Point3D_1z_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jfloat jarg2) {
+SWIGEXPORT void JNICALL Java_com_mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_Mach1Point3D_1z_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jfloat jarg2) {
   Mach1Point3D *arg1 = (Mach1Point3D *) 0 ;
   float arg2 ;
   
@@ -327,7 +327,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_Ma
 }
 
 
-SWIGEXPORT jfloat JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_Mach1Point3D_1z_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jfloat JNICALL Java_com_mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_Mach1Point3D_1z_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jfloat jresult = 0 ;
   Mach1Point3D *arg1 = (Mach1Point3D *) 0 ;
   float result;
@@ -342,7 +342,7 @@ SWIGEXPORT jfloat JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_new_1Mach1Point3D(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_com_mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_new_1Mach1Point3D(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   Mach1Point3D *result = 0 ;
   
@@ -354,7 +354,7 @@ SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_n
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_delete_1Mach1Point3D(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_com_mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_delete_1Mach1Point3D(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   Mach1Point3D *arg1 = (Mach1Point3D *) 0 ;
   
   (void)jenv;
@@ -364,7 +364,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_de
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_new_1Mach1Point3DArray(JNIEnv *jenv, jclass jcls, jint jarg1) {
+SWIGEXPORT jlong JNICALL Java_com_mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_new_1Mach1Point3DArray(JNIEnv *jenv, jclass jcls, jint jarg1) {
   jlong jresult = 0 ;
   int arg1 ;
   Mach1Point3DArray *result = 0 ;
@@ -378,7 +378,7 @@ SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_n
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_delete_1Mach1Point3DArray(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_com_mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_delete_1Mach1Point3DArray(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   Mach1Point3DArray *arg1 = (Mach1Point3DArray *) 0 ;
   
   (void)jenv;
@@ -388,7 +388,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_de
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_Mach1Point3DArray_1getitem(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_com_mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_Mach1Point3DArray_1getitem(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   jlong jresult = 0 ;
   Mach1Point3DArray *arg1 = (Mach1Point3DArray *) 0 ;
   int arg2 ;
@@ -405,7 +405,7 @@ SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_M
 }
 
 
-SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_Mach1Point3DArray_1setitem(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jlong jarg3, jobject jarg3_) {
+SWIGEXPORT void JNICALL Java_com_mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_Mach1Point3DArray_1setitem(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jlong jarg3, jobject jarg3_) {
   Mach1Point3DArray *arg1 = (Mach1Point3DArray *) 0 ;
   int arg2 ;
   Mach1Point3D arg3 ;
@@ -427,7 +427,7 @@ SWIGEXPORT void JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_Ma
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_Mach1Point3DArray_1cast(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_com_mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_Mach1Point3DArray_1cast(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   Mach1Point3DArray *arg1 = (Mach1Point3DArray *) 0 ;
   Mach1Point3D *result = 0 ;
@@ -442,7 +442,7 @@ SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_M
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_Mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_Mach1Point3DArray_1frompointer(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_com_mach1_Mach1SpatialLibs_Mach1Point3DModuleJNI_Mach1Point3DArray_1frompointer(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   Mach1Point3D *arg1 = (Mach1Point3D *) 0 ;
   Mach1Point3DArray *result = 0 ;
