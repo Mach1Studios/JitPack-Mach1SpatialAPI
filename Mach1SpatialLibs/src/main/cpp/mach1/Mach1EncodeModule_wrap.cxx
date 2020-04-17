@@ -303,7 +303,7 @@ SWIGEXPORT jint JNICALL Java_com_mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mac
   
   (void)jenv;
   (void)jcls;
-  result = (Mach1EncodeOutputModeType)Mach1EncodeOutputMode4Ch;
+  result = (Mach1EncodeOutputModeType)Mach1EncodeOutputModeM1Horizon;
   jresult = (jint)result; 
   return jresult;
 }
@@ -315,7 +315,7 @@ SWIGEXPORT jint JNICALL Java_com_mach1_Mach1SpatialLibs_Mach1EncodeModuleJNI_Mac
   
   (void)jenv;
   (void)jcls;
-  result = (Mach1EncodeOutputModeType)Mach1EncodeOutputMode8Ch;
+  result = (Mach1EncodeOutputModeType)Mach1EncodeOutputModeM1Spatial;
   jresult = (jint)result; 
   return jresult;
 }
