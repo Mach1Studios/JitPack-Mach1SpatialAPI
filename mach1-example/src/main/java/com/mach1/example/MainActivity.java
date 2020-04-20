@@ -1,6 +1,6 @@
 package com.mach1.example;
 
-import com.mach1.Mach1SpatialLibs.*;
+import com.mach1.spatiallibs.*;
 
 import com.mach1.example.custom_views.AngleView;
 import com.mach1.example.custom_views.SoundList;

@@ -83,7 +83,7 @@ public class SoundMap extends View implements AngleView {
     float centerX;
     float centerY;
 
-    public void update(float[] decoded, com.mach1.Mach1SpatialLibs.Mach1DecodeAlgoType decodeType) {
+    public void update(float[] decoded, com.mach1.spatiallibs.Mach1DecodeAlgoType decodeType) {
         for (Encoder encoder : listEncoders) {
             encoder.update(decoded, decodeType);
         }

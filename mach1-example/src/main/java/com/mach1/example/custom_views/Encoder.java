@@ -7,10 +7,10 @@ import android.support.v4.content.ContextCompat;
 import android.media.MediaPlayer;
 import android.net.Uri;
 
-import com.mach1.Mach1SpatialLibs.Mach1Encode;
-import com.mach1.Mach1SpatialLibs.Mach1EncodeInputModeType;
-import com.mach1.Mach1SpatialLibs.Mach1DecodeAlgoType;
-import com.mach1.Mach1SpatialLibs.Mach1Point3DArray;
+import com.mach1.spatiallibs.Mach1Encode;
+import com.mach1.spatiallibs.Mach1EncodeInputModeType;
+import com.mach1.spatiallibs.Mach1DecodeAlgoType;
+import com.mach1.spatiallibs.Mach1Point3DArray;
 import com.mach1.example.MainActivity;
 import com.mach1.example.R;
 
