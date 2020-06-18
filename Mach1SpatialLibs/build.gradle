@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.Mach1Studios'
 
 android {
     compileSdkVersion 28
@@ -38,6 +40,7 @@ android {
             path "CMakeLists.txt"
         }
     }
+    ndkVersion '21.0.6113669'
 }
 
 dependencies {
