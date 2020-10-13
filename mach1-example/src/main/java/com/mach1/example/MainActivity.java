@@ -87,14 +87,15 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         //1.0 = no filter | 0.1 = slow filter
         m1Decode.setFilterSpeed(1.0f);
 
-
         arcView = findViewById(R.id.round_chart_view);
         soundMap = (SoundMap)findViewById(R.id.main_chart_view);
 
         sv = findViewById(R.id.sv);
         soundMap.setScrollView(sv);
 
-        // angles
+        // Orientation angles and angle labels
+        yawView = (YawView)findViewById(R.id.round_chart_view);
+
         sbPitch = (SeekBar)findViewById(R.id.sbPitch);
         sbPitch.setEnabled(false);
         sbPitchText = (TextView) findViewById(R.id.sbPitchText);
@@ -102,8 +103,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         sbRoll = (SeekBar)findViewById(R.id.sbRoll);
         sbRoll.setEnabled(false);
         sbRollText = (TextView) findViewById(R.id.sbRollText);
-
-        yawView = (YawView)findViewById(R.id.round_chart_view);
 
         // sound list
         soundList = (SoundList)findViewById(R.id.sound_list);
@@ -118,15 +117,15 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         llMainContainer = findViewById(R.id.main_container);
 
+        // Input gain parameter
         sbVolume = (SeekBar)findViewById(R.id.sbVolume);
         sbVolume.setOnSeekBarChangeListener(this);
 
+        // Stereo input Mach1Encode parameters
         sbHeight = (SeekBar)findViewById(R.id.sbHeight);
         sbHeight.setOnSeekBarChangeListener(this);
-
         sbStereo = (SeekBar)findViewById(R.id.sbStereo);
         sbStereo.setOnSeekBarChangeListener(this);
-
 
         /*
         ValueAnimator anim = ValueAnimator.ofInt(0, sbPitch.getMax());
@@ -210,19 +209,24 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             SensorManager.remapCoordinateSystem(rotMatrix, SensorManager.AXIS_X, SensorManager.AXIS_Z, remapedMatrix);
             SensorManager.getOrientation(remapedMatrix, rotVals);
 
+            // Update Euler angles
+            // Mach1 Spatial APIs use an internal angle convention outlined here
+            // https://dev.mach1.tech/#mach1-internal-angle-standard
+            // The goal of this angle convention is to make it a first person perspective and
+            // as humanized and understandable as possible
             yaw = (float) Math.toDegrees(rotVals[0]);
             pitch = (float) Math.toDegrees(-1 * rotVals[1]);
             roll = (float) Math.toDegrees(rotVals[2]);
 
             soundMap.setAngle((int)yaw);
             yawView.setAngle((int)yaw);
-
             sbPitch.setProgress((int)(map(pitch, -90, 90, 0, 100)));
             sbPitchText.setText("" + (int)pitch + "º");
-
             sbRoll.setProgress((int)(map(roll, -90, 90, 0, 100)));
             sbRollText.setText("" + (int)roll + "º");
 
+            // Mach1Decode API requires use of `beginBuffer()` and `endBuffer()`
+            // This design allows customization of the frequency of calls to update the orientation
             m1Decode.beginBuffer();
             float decoded[] = new float[18];
             m1Decode.decode(yaw, pitch, roll, decoded, 0, 0);
@@ -239,8 +243,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
                 soundList.selectIndex(soundMap.selectedEncoder.indexSound);
             }
-
-            // Log.v("Mach1",  "yaw: " + yaw + " , " + "pitch: " + pitch + " , " + "roll: " + roll);
+            // Check input orientation angles
+            // Log.v("Mach1 Spatial",  "yaw: " + yaw + " , " + "pitch: " + pitch + " , " + "roll: " + roll);
         }
     }
 

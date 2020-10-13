@@ -133,7 +133,7 @@ public class Encoder {
 
         m1Encode.setRotation(rotation);
         m1Encode.setDiverge(diverge);
-        m1Encode.setPitch(height);
+        m1Encode.setElevation(height);
         m1Encode.setAutoOrbit(true);
         m1Encode.setIsotropicEncode(true);
         m1Encode.setInputMode(type);
@@ -142,8 +142,10 @@ public class Encoder {
 
         //Log.v("Mach1",  "diverge: " + diverge + " , " + "rotation: " + rotation );
 
-        //Use each coeff to decode multichannel Mach1 Spatial mix
-        float[] volumes = m1Encode.getResultingVolumesDecoded(decodeType, decodeArray);
+        // Inline Mach1Encode->Mach1Decode decoder
+        // https://dev.mach1.tech/#inline-mach1encode-object-decoder
+        // Use each coeff to decode multichannel Mach1 Spatial mix
+        float[] volumes = m1Encode.getResultingCoeffsDecoded(decodeType, decodeArray);
 
         if(players != null) {
             for (int i = 0; i < players.length; i++) {
@@ -178,15 +180,16 @@ public class Encoder {
         canvas.drawCircle(x, y, radiusPoint, (selected) ? mCirclePaint1Selected : mCirclePaint1);
         canvas.drawCircle(x, y, radiusPoint - SoundMap.toPx(10, context), (selected) ? mCirclePaint2Selected : mCirclePaint2);
 
+        // Handling for stereo input sources to Mach1Encode
         if(m1Encode.getPointsCount() == 2) {
             Mach1Point3DArray points = m1Encode.getPoints();
 
             // Further Debug functions
             /*
-            Log.v("Mach1", "points names: " + m1Encode.getPointsNames());
-            Log.v("Mach1", "getGains: " + m1Encode.getGains());
-            Log.v("Mach1", "getPointsCount: " + m1Encode.getPointsCount());
-            Log.v("Mach1", "getGainsForInputChannelNamed: " + m1Encode.getGainsForInputChannelNamed("R"));
+            Log.v("Mach1 Spatial", "points names: " + m1Encode.getPointsNames());
+            Log.v("Mach1 Spatial", "getGains: " + m1Encode.getGains());
+            Log.v("Mach1 Spatial", "getPointsCount: " + m1Encode.getPointsCount());
+            Log.v("Mach1 Spatial", "getGainsForInputChannelNamed: " + m1Encode.getGainsForInputChannelNamed("R"));
             */
 
             canvas.drawCircle(x + (points.getitem(0).getZ()-0.5f) * parentWidth, y + (1-points.getitem(0).getX()-0.5f) * parentHeight, radiusPoint * 0.25f, (selected) ? mCirclePaint1Selected : mCirclePaint1);
