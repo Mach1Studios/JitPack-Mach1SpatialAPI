@@ -145,11 +145,11 @@ public class Encoder {
         // Inline Mach1Encode->Mach1Decode decoder
         // https://dev.mach1.tech/#inline-mach1encode-object-decoder
         // Use each coeff to decode multichannel Mach1 Spatial mix
-        float[] volumes = m1Encode.getResultingCoeffsDecoded(decodeType, decodeArray);
+        float[] gains = m1Encode.getResultingCoeffsDecoded(decodeType, decodeArray);
 
         if(players != null) {
             for (int i = 0; i < players.length; i++) {
-                players[i].setVolume(volumes[2 * i + 0] * volume, volumes[2 * i + 1] * volume);
+                players[i].setVolume(gains[2 * i + 0] * volume, gains[2 * i + 1] * volume);
             }
         }
     }
