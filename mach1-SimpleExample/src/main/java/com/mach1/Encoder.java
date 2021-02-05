@@ -14,8 +14,8 @@ import com.mach1.spatiallibs.Mach1Point3DArray;
 
 public class Encoder {
 
-    public float height;
-    public float volume;
+    public float elevation;
+    public float masterGain;
     public float stereoSpread;
     public boolean isMono;
     public float x;
@@ -36,9 +36,9 @@ public class Encoder {
         this.y = 0; // -1 to 1
 
         // default values
-        this.volume = 1.0f;
-        this.height = 0.0f;
-        this.stereoSpread = 0.25f;
+        this.masterGain = 1.0f;
+        this.elevation = 0.0f;
+        this.stereoSpread = 1.0f; // for stereo inputs only
 
         this.isMono = true;
         this.type = Mach1EncodeInputModeType.Mach1EncodeInputModeMono;
@@ -79,23 +79,26 @@ public class Encoder {
 
         m1Encode.setRotation(rotation);
         m1Encode.setDiverge(diverge);
-        m1Encode.setPitch(height);
+        m1Encode.setElevation(elevation);
         m1Encode.setAutoOrbit(true);
         m1Encode.setIsotropicEncode(true);
         m1Encode.setInputMode(type);
         m1Encode.setStereoSpread(stereoSpread);
-        m1Encode.generatePointResults();
-
         //Log.v("Mach1",  "diverge: " + diverge + " , " + "rotation: " + rotation );
+        m1Encode.generatePointResults();
 
         // Inline Mach1Encode->Mach1Decode decoder
         // https://dev.mach1.tech/#inline-mach1encode-object-decoder
         // Use each coeff to decode multichannel Mach1 Spatial mix
         float[] gains = m1Encode.getResultingVolumesDecoded(decodeType, decodeArray);
 
+        // Alternatively you can setup a mixer for more customization and sum together all same index coeff outputs
+        // from each Mach1Encode object together before passing along to the Mach1Decode object for stereo
+        // orientation tracked playback
+
         if(players != null) {
             for (int i = 0; i < players.length; i++) {
-                players[i].setVolume(gains[2 * i + 0] * volume, gains[2 * i + 1] * volume);
+                players[i].setVolume(gains[2 * i + 0] * masterGain, gains[2 * i + 1] * masterGain);
             }
         }
     }
