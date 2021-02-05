@@ -6,10 +6,10 @@ import android.os.Bundle;
 import android.util.Log;
 
 import com.mach1.Encoder;
-import com.mach1.SoundMap;
+import com.mach1.SpatialMixer;
 
 public class MainActivity extends Activity {
-    private SoundMap soundMap;
+    private SpatialMixer spatialMixer;
 
     public static String[][] audioFiles = {
             { "nature_mono01" },
@@ -28,15 +28,16 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        soundMap = new SoundMap();
+        // Create a new spatialmixer (this contains 'n' number of Mach1Encodes -> a single Mach1Decode)
+        spatialMixer = new SpatialMixer();
 
         Encoder encoder = new Encoder(getApplicationContext());
         encoder.x = 0;
         encoder.y = 0;
         encoder.play(0, audioFiles[0]);
-        soundMap.addEncoder(encoder);
 
-        Log.v("Mach1","Test3");
+        // Use this function to add more Mach1Encode objects that mix and output to the Mach1Decode object
+        spatialMixer.addEncoder(encoder);
     }
 
     @Override

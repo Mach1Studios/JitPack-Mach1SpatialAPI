@@ -8,12 +8,12 @@ import java.util.List;
 import com.mach1.spatiallibs.Mach1Decode;
 import com.mach1.spatiallibs.Mach1DecodeAlgoType;
 
-public class SoundMap {
+public class SpatialMixer {
 
     public Mach1Decode m1Decode;
     List<Encoder> listEncoders = new ArrayList<>();
 
-    public SoundMap() {
+    public SpatialMixer() {
         m1Decode = new Mach1Decode();
         //Mach1 Decode Setup
         //Setup the correct angle convention for orientation Euler input angles
@@ -22,7 +22,7 @@ public class SoundMap {
         m1Decode.setDecodeAlgoType(Mach1DecodeAlgoType.Mach1DecodeAlgoAltSpatial);
         //Setup for the safety filter speed:
         //1.0 = no filter | 0.1 = slow filter
-        m1Decode.setFilterSpeed(1.0f);
+        m1Decode.setFilterSpeed(0.95f);
     }
 
     public void update(float yaw, float pitch, float roll) {
