@@ -14,7 +14,7 @@ import com.mach1.spatiallibs.Mach1Point3DArray;
 
 public class Encoder {
 
-    public float elevation;
+    public float elevationFromMinus1to1;
     public float masterGain;
     public float stereoSpread;
     public boolean isMono;
@@ -37,7 +37,7 @@ public class Encoder {
 
         // default values
         this.masterGain = 1.0f;
-        this.elevation = 0.0f;
+        this.elevationFromMinus1to1 = 0.0f;
         this.stereoSpread = 1.0f; // for stereo inputs only
 
         this.isMono = true;
@@ -79,7 +79,7 @@ public class Encoder {
 
         m1Encode.setRotation(rotation);
         m1Encode.setDiverge(diverge);
-        m1Encode.setElevation(elevation);
+        m1Encode.setElevation(elevationFromMinus1to1);
         m1Encode.setAutoOrbit(true);
         m1Encode.setIsotropicEncode(true);
         m1Encode.setInputMode(type);
