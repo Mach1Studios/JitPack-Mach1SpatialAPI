@@ -133,7 +133,7 @@ public class Encoder {
 
         m1Encode.setRotation(rotation);
         m1Encode.setDiverge(diverge);
-        m1Encode.setElevation(height);
+        m1Encode.setPitch(height);
         m1Encode.setAutoOrbit(true);
         m1Encode.setIsotropicEncode(true);
         m1Encode.setInputMode(type);
@@ -145,7 +145,7 @@ public class Encoder {
         // Inline Mach1Encode->Mach1Decode decoder
         // https://dev.mach1.tech/#inline-mach1encode-object-decoder
         // Use each coeff to decode multichannel Mach1 Spatial mix
-        float[] gains = m1Encode.getResultingCoeffsDecoded(decodeType, decodeArray);
+        float[] gains = m1Encode.getResultingVolumesDecoded(decodeType, decodeArray);
 
         if(players != null) {
             for (int i = 0; i < players.length; i++) {
