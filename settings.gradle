@@ -1,2 +1,2 @@
-include ':mach1-example', ':Mach1SpatialLibs', ':mach1-decode-example'
+include ':mach1-example', ':mach1-decode-example', ':mach1-SimpleExample', ':Mach1SpatialLibs'
 rootProject.name='Mach1SpatialAPI'
