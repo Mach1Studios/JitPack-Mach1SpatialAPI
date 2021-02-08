@@ -98,6 +98,17 @@ public class Encoder {
         // Alternatively you can setup a mixer for more customization and sum together all same index coeff outputs
         // from each Mach1Encode object together before passing along to the Mach1Decode object for stereo
         // orientation tracked playback
+        /*
+        float[][] gainsFromEncode = m1Encode.getGains();
+        float[] gains = new float[16];
+        for (int j = 0; j < m1Encode.getPointsCount(); j++) {
+            for (int i = 0; i < m1Encode.getOutputChannelsCount(); i++) {
+                gains[j * 2 + 0] += decodeArray[i * 2 + 0] * gainsFromEncode[j][i]; // left
+                gains[j * 2 + 1] += decodeArray[i * 2 + 1] * gainsFromEncode[j][i]; // right
+            }
+        }
+        */
+
 
         if(players != null) {
             for (int i = 0; i < players.length; i++) {
