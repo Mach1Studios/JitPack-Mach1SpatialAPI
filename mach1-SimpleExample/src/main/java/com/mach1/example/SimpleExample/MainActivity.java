@@ -2,6 +2,8 @@ package com.mach1.example.SimpleExample;
 
 import android.app.Activity;
 import android.os.Bundle;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import android.util.Log;
 
@@ -38,6 +40,15 @@ public class MainActivity extends Activity {
 
         // Use this function to add more Mach1Encode objects that mix and output to the Mach1Decode object
         spatialMixer.addEncoder(encoder);
+
+
+        Timer timer = new Timer();
+        timer.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                spatialMixer.update(0,0,0);
+            }
+        }, 0, 30);
     }
 
     @Override
