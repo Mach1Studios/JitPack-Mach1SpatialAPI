@@ -16,6 +16,7 @@ public class Encoder {
 
     public float elevationFromMinus1to1;
     public float masterGain;
+    public float stereoRotate;
     public float stereoSpread;
     public boolean isMono;
     public float x;
@@ -39,6 +40,7 @@ public class Encoder {
         this.masterGain = 1.0f;
         this.elevationFromMinus1to1 = 0.0f;
         this.stereoSpread = 1.0f; // for stereo inputs only
+        this.stereoRotate = 0.0f; // for stereo inputs only
 
         this.isMono = true;
         this.type = Mach1EncodeInputModeType.Mach1EncodeInputModeMono;
@@ -74,23 +76,24 @@ public class Encoder {
         float xInternal = this.x;
         float yInternal = this.y;
 
-        float rotation = (float)(Math.atan2(-xInternal,yInternal) / (2 * PI) + 0.5) % 1.0f; // 0 - 1
+        float azimuthFromMinus1to1 = (float)(Math.atan2(-xInternal,yInternal) / (2 * PI) + 0.5) % 1.0f; // 0 - 1
         float diverge = (float)(Math.sqrt(Math.pow(xInternal, 2) + Math.pow(yInternal, 2)) / Math.sqrt(2)); // diagonal
 
-        m1Encode.setRotation(rotation);
+        m1Encode.setAzimuth(azimuthFromMinus1to1);
         m1Encode.setDiverge(diverge);
         m1Encode.setElevation(elevationFromMinus1to1);
-        m1Encode.setAutoOrbit(true);
         m1Encode.setIsotropicEncode(true);
         m1Encode.setInputMode(type);
+        m1Encode.setAutoOrbit(true); // When true `stereoRotate` will be automatically calculated to rotate stereo points around origin
+        m1Encode.setStereoRotate(stereoRotate);
         m1Encode.setStereoSpread(stereoSpread);
-        //Log.v("Mach1",  "diverge: " + diverge + " , " + "rotation: " + rotation );
+        //Log.v("Mach1",  "Azimuth/Rotation: " + azimuthFromMinus1to1 + " , " + "Diverge: " + diverge );
         m1Encode.generatePointResults();
 
         // Inline Mach1Encode->Mach1Decode decoder
         // https://dev.mach1.tech/#inline-mach1encode-object-decoder
         // Use each coeff to decode multichannel Mach1 Spatial mix
-        float[] gains = m1Encode.getResultingVolumesDecoded(decodeType, decodeArray);
+        float[] gains = m1Encode.getResultingCoeffsDecoded(decodeType, decodeArray);
 
         // Alternatively you can setup a mixer for more customization and sum together all same index coeff outputs
         // from each Mach1Encode object together before passing along to the Mach1Decode object for stereo
