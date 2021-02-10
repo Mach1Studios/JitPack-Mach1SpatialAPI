@@ -14,7 +14,7 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             cmake {
-                cppFlags "-std=c++14 -I${project.buildDir}/../src/main/cpp/include -D__STDC_CONSTANT_MACROS"
+                cppFlags "-std=c++14 -I${project.buildDir}/../src/main/cpp/mach1/include -D__STDC_CONSTANT_MACROS"
             }
         }
         ndk {
