@@ -7,6 +7,7 @@ import java.util.List;
 
 import com.mach1.spatiallibs.Mach1Decode;
 import com.mach1.spatiallibs.Mach1DecodeAlgoType;
+import com.mach1.spatiallibs.Mach1Point3D;
 
 public class SpatialMixer {
 
@@ -28,10 +29,25 @@ public class SpatialMixer {
     public void update(float yaw, float pitch, float roll) {
         // Mach1Decode API requires use of `beginBuffer()` and `endBuffer()`
         // This design allows customization of the frequency of calls to update the orientation
-        m1Decode.beginBuffer();
+
+        // Create the next "frame" to store coeffs for Audio Mixer
         float decoded[] = new float[18];
-        m1Decode.decode(yaw, pitch, roll, decoded, 0, 0);
+        // Create the next "frame" of input angles for Mach1Decode (listener rotation)
+        Mach1Point3D rotationDegrees = new Mach1Point3D();
+        rotationDegrees.setX(yaw);
+        rotationDegrees.setY(pitch);
+        rotationDegrees.setZ(roll);
+
+        // Mach1Decode Processing
+        m1Decode.beginBuffer();
+        m1Decode.setRotationDegrees(rotationDegrees);
+        m1Decode.decodeCoeffs(decoded, 0, 0); // Use this in case your design requires several locations to "setRotation"
         m1Decode.endBuffer();
+
+        // Alternative inline `decode()` function
+        // m1Decode.beginBuffer();
+        // m1Decode.decode(yaw, pitch, roll, decoded, 0, 0);
+        // m1Decode.endBuffer();
 
         for (Encoder encoder : listEncoders) {
             encoder.update(decoded, Mach1DecodeAlgoType.Mach1DecodeAlgoSpatial);
