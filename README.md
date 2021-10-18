@@ -27,10 +27,10 @@ permitted to use, link, compile and/or distribute any of the contents of this re
 
 ## Examples Explained
 We included two example Android apps: 
- - `mach1-example` A creator example app with Mach1Encode and Mach1Decode implementation
+ - `mach1-encode-example` A creator example app with Mach1Encode and Mach1Decode implementation
  - `mach1-decode-example` A stripped down Mach1Decode example only, for apps requiring just spatial audio playback, designed as an integration focused around C++ and an internal audio system. This example is provided for reference for C++.
 
-`mach1-example` app uses full java implementation via gradle
+`mach1-encode-example` app uses full java implementation via gradle
 `mach1-decode-example` app uses cpp libs called via JNI
 
 ## Setup
