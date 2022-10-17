@@ -441,6 +441,20 @@ SWIGEXPORT jint JNICALL Java_com_mach1_spatiallibs_Mach1DecodeModuleJNI_Mach1Dec
 }
 
 
+SWIGEXPORT jint JNICALL Java_com_mach1_spatiallibs_Mach1DecodeModuleJNI_Mach1DecodeCAPI_1getFormatCoeffCount(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  jint jresult = 0 ;
+  void *arg1 = (void *) 0 ;
+  int result;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(void **)&jarg1; 
+  result = (int)Mach1DecodeCAPI_getFormatCoeffCount(arg1);
+  jresult = (jint)result; 
+  return jresult;
+}
+
+
 SWIGEXPORT void JNICALL Java_com_mach1_spatiallibs_Mach1DecodeModuleJNI_Mach1DecodeCAPI_1setRotation(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jobject jarg2_) {
   void *arg1 = (void *) 0 ;
   Mach1Point3D arg2 ;
