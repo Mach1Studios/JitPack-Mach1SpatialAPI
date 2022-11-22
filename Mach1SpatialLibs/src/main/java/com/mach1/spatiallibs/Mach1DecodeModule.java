@@ -58,10 +58,6 @@ public class Mach1DecodeModule {
     return Mach1DecodeModuleJNI.Mach1DecodeCAPI_getFormatChannelCount(SWIGTYPE_p_void.getCPtr(M1obj));
   }
 
-  public static int Mach1DecodeCAPI_getFormatCoeffCount(SWIGTYPE_p_void M1obj) {
-    return Mach1DecodeModuleJNI.Mach1DecodeCAPI_getFormatCoeffCount(SWIGTYPE_p_void.getCPtr(M1obj));
-  }
-
   public static void Mach1DecodeCAPI_setRotation(SWIGTYPE_p_void M1obj, Mach1Point3D newRotationFromMinusOnetoOne) {
     Mach1DecodeModuleJNI.Mach1DecodeCAPI_setRotation(SWIGTYPE_p_void.getCPtr(M1obj), Mach1Point3D.getCPtr(newRotationFromMinusOnetoOne), newRotationFromMinusOnetoOne);
   }
